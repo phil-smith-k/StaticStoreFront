@@ -1,0 +1,293 @@
+/* Common Elements */
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background-color: #e6f5ff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0.2em 0 0.2em 0;
+    padding: 0;
+    display: inline;
+}
+
+h2 {
+    margin: 0.1em 0 0.1em 0.5em;
+    padding: 0;
+}
+
+h4 {
+    margin: 0.1em 0 0.1em 0;
+    padding: 0;
+}
+
+p {
+    margin: 0.1em 0 0.1em 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Nav */
+
+nav {
+    background-color: #66c2ff;
+    height: 70px;
+}
+
+nav img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.logo-title {
+    float: left;
+    margin: 0.5em 0 0 0.3em;
+}
+
+.logo-title h1 {
+    font-size: 40px;
+    margin-left: 0.2em;
+}
+
+.logo-title h2 {
+    display: inline;
+    font-size: 28px;
+}
+
+.nav-bar {
+    float: right;
+}
+
+#nav-menu {
+    position: relative;
+    height: 56px;
+}
+
+.transition {
+    transition: all 1s;
+}
+
+.nav-bar ul {
+    background-color:#e6f5ff;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.nav-bar li {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+#menu-icon {
+    transform: rotate(180deg);
+    height: 30px;
+    width: 40px;
+    padding: 0.1em;   
+}
+
+#menu-icon:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    color: lightgray;
+    text-shadow: 1px 1px black;
+}
+
+/* Hero */
+
+section.hero {
+    height: 600px;
+    background-image: url("assets/sheetmusic5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div.hero-text {
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    position: relative;
+    top: 175px;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px black;
+}
+
+.hero-text h4 {
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+}
+/*  Main */
+
+section.main {
+    margin: 3.0em auto 0 auto;
+    text-align: center;
+}
+
+.product-tile img {
+    height: 120px;
+    width: 180px;
+    border: 2px solid black;
+    box-shadow: 2px 2px gray;
+}
+
+.product-tile {
+    background-color: #66c2ff;
+    display: inline-block;
+    width: 240px; 
+    height: 315px;
+    border: 3px solid black;
+    margin: 2.0em;
+}
+
+.product-tile:hover {
+    box-shadow: 7px 7px gray;
+}
+
+.product-tile h5 {
+    font-size: 15px;
+    width: 170px;
+    margin: 1.0em auto 0.5em auto;
+    text-align: center;
+}
+
+.product-tile button {
+    background-color:#e6f5ff;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 1.0em 0 2.0em 0;
+    border-style: none;
+    height: 27px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.product-tile button:hover {
+    color: white;
+    text-shadow: 2px 2px black;
+    background-image: url(assets/sheetmusic1.jpg);
+    background-position: center-top;
+}
+
+/* Footer */
+
+footer {
+    background-color: #66c2ff;
+    height: 60px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 19px;
+}
+
+footer ul {
+    position: relative;
+    top: 15px;
+}
+
+.footer-text  li {
+    display: inline;
+    margin: 1.0em 1.0em 0 0;
+}
+
+.footer-text a {
+    margin-top: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-text a:hover {
+    color: lightgray;
+    text-shadow: 1px 1px black;
+}
+
+.footer-text a::before {
+    content: "| ";
+    padding-right: 0.5em;
+}
+
+.footer-text a:hover::before {
+    color: black;
+    text-shadow: none;
+}
+
+/* Media Query */
+
+@media (max-width: 750px) {
+    nav {
+        text-align: center;
+        height: 150px;
+    }
+    .nav-bar li {
+        margin: 0 0.4em;
+    }
+    #nav-menu {
+        position: static;
+        display: block;
+        clear: both;
+        margin: auto;
+        float: none;
+    }
+    #nav-menu ul {
+        border-radius: 0;
+        height: 40px;
+        margin-bottom: 0;
+    }
+    section.hero {
+        height: 355px;
+    }
+    div.hero-text {
+        top: 50px;
+    }
+    #nav-menu img {
+        display: none; 
+    }
+    #nav-menu a {
+        font-size: 20px;
+    }
+    .logo-title {
+        position: static;
+        display: block;
+        float: none;
+        margin: auto;
+        width: 500px;
+    }
+    .logo-title img {
+        float: none;  
+        display: inline;
+    }
+    .product-tile {
+        width: 400px;
+    }
+    .footer-text ul {
+        margin: auto;
+        padding: 0;
+    }
+    .footer-text li {
+        margin: 0 0.1em;
+    }
+    .footer-text {
+        font-size: 18px;
+    }
+}
+

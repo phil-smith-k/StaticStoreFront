@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Sheet Music and More</title>
+    <script>
+        function menuTransform() {
+        const nav = document.getElementById("nav-menu");
+        const icon = document.getElementById("menu-icon");
+            
+            if (nav.style.left == "670px") {
+                nav.classList.add("transition");
+                icon.style.transform = "rotate(0)";
+                nav.style.left = "10px";
+            }
+            else {
+                icon.style.transform = "rotate(180deg)";
+                nav.style.left = "670px";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-title">
+            <img src="assets/note.png" alt="">
+            <h1>Sheet Music</h1>
+            <h2>and more...</h2>
+        </div>
+        <div class="nav-bar" id="nav-menu" id="animation" style="left: 670px">
+            <ul>
+                <li onclick="menuTransform()"><a href="#"><img id="menu-icon" src="assets/arrow.png" alt=""></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Elementary</a></li>
+                <li><a href="#">Middle School</a></li>
+                <li><a href="#">High School</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="clear"></div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Concert Festival Sale</h1>
+            <h4>Deals for the Competitive Season</h4>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="product-tile">
+            <h3>Orff Ensemble</h3>
+            <img src="assets/orff1.jpg" alt="orff ensemble">
+            <h5>Music for your elementary ensembles.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>Middle School Choir</h3>
+            <img src="assets/mschoir.jpg" alt="middle school choir">
+            <h5>Music for your middle school choir.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>High School Choir</h3>
+            <img src="assets/hschoir.jpg" alt="high school choir">
+            <h5>Music for your high school choir.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>Middle School Band</h3>
+            <img src="assets/msband.jpg" alt="middle school band">
+            <h5>Music for your middle school band.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>High School Band</h3>
+            <img src="assets/hsband.jpg" alt="high school band">
+            <h5>Music for your high school band.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>Marching Band</h3>
+            <img src="assets/marchingband.jpg" alt="marching band">
+            <h5>Music for your high school marching band.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>Middle School Orchestra</h3>
+            <img src="assets/msorch.jpg" alt="middle school orchestra">
+            <h5>Music for your middle school orchestra.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+        <div class="product-tile">
+            <h3>High School Orchestra</h3>
+            <img src="assets/hsorch.jpg" alt="high school orchestra">
+            <h5>Music for your high school orchestra.</h5>
+            <button><strong>Shop Now</strong></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <ul>
+                <li>&copy; 2020</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
